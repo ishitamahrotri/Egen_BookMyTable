@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Book My Table</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/main.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
+</head>
+<body>
+<div class="div-header">
+    <a href="bookmytable.html" class="white-link"><span><i class="glyphicon glyphicon-home"></i>  <strong>Home</strong></span></a>
+    &nbsp;&nbsp;
+    <a href="browse.html" class="white-link"><span><i class="glyphicon glyphicon-search"></i> <strong>Book a
+        Table</strong></span></a>
+    <a href="bookmytable.html" class="white-link" onclick="LogOutUser();"><span class="right-float"><i
+            class="glyphicon glyphicon-log-out"></i> Logout</span></a>
+</div>
+<div>
+    <ul class="nav nav-tabs nav-justified nav-black">
+
+        <li id="liReservationList" role="presentation" class="active"><a href="#" onclick="ShowDiv('divReservationList');">Reservation
+            List</a></li>
+        <li id="liSeatingArea" role="presentation"><a href="#" onclick="ShowDiv('divSeatingArea');">Seating Area</a>
+        </li>
+        <li id="liProfile" role="presentation"><a href="#" onclick="ShowDiv('divProfile');">Profile
+            Settings</a></li>
+    </ul>
+</div>
+<br/><br/>
+
+<div id="divReservationList">
+    <div class="panel panel-danger panel-opaque">
+        <div class="panel-body">
+            <div class=container>
+                <table class="table table-hover">
+                    <thead>
+                    <td>
+                        #
+                    </td>
+                    <td>Name
+                    </td>
+                    <td>
+                        Date
+                    </td>
+                    <td>
+                        Confirmation Code
+                    </td>
+                    <td>
+                        View Details
+                    </td>
+                    </thead>
+                    <tr>
+                        <td>
+                            1
+                        </td>
+                        <td>
+                            Ishita Mahrotri
+                        </td>
+                        <td>
+                            17-Jul-2015
+                        </td>
+                        <td>
+                            TCF00117
+                        </td>
+                        <td>
+                            <a href="#"
+                               onclick="window.open('assigntable.html','ViewReservation','status=0,toolbar=0,top=0,left=0');"><i
+                                    class="glyphicon glyphicon-search"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            1
+                        </td>
+                        <td>
+                            Nidhi Shah
+                        </td>
+                        <td>
+                            25-Jul-2015
+                        </td>
+                        <td>
+                            TCF00117
+                        </td>
+                        <td>
+                            <a href="#"
+                               onclick="window.open('assigntable.html','ViewReservation','status=0,toolbar=0,top=0,left=0');"><i
+                                    class="glyphicon glyphicon-search"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            1
+                        </td>
+                        <td>
+                            Apurva Gangan
+                        </td>
+                        <td>
+                            25-Jul-2015
+                        </td>
+                        <td>
+                            TCF00119
+                        </td>
+                        <td>
+                            <a href="#"
+                               onclick="window.open('assigntable.html','ViewReservation','status=0,toolbar=0,top=0,left=0');"><i
+                                    class="glyphicon glyphicon-search"></i></a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="divSeatingArea" class="hideInline">
+    <div class="panel panel-danger panel-opaque">
+    <div class="panel-body">
+        <div class="container">
+            <table class="table table-hover">
+                <thead>
+                <td>
+                    Table #
+                </td>
+                <td>Status
+                </td>
+                <td>
+                    Confirmation Code
+                </td>
+                </thead>
+                <tr>
+                    <td>
+                        1
+                    </td>
+                    <td>
+                        Reserved
+                    </td>
+                    <td>
+                        <a href="#"
+                           onclick="window.open('assigntable.html','ViewReservation','status=0,toolbar=0,top=0,left=0');">TCF0171</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        2
+                    </td>
+                    <td>
+                        Reserved
+                    </td>
+                    <td>
+                        <a href="#"
+                           onclick="window.open('assigntable.html','ViewReservation','status=0,toolbar=0,top=0,left=0');">TCF0172</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        3
+                    </td>
+                    <td>
+                        Available
+                    </td>
+                    <td>
+                        -
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    </div>
+</div>
+<div id="divProfile" class="hideInline">
+    <div class="panel panel-danger panel-opaque">
+    <div class="panel-body">
+        <div class="container text-center">
+            <label>Restaurant Name:</label> The Cheesecake Factory
+            <br/>
+            <label>Display Image: </label> abc <i class="glyphicon glyphicon-pencil"></i>
+            <br/>
+            <label>Contact: </label> 925-621-6732
+            <br/>
+            <label>Email: </label> thecheesecakefactory@tcf.com
+            <br/>
+            <label>Address: </label> 3341 Oakmead Village, Santa Clara, CA, 95304
+            <br/>
+            <label>
+                <input type="checkbox" checked disabled> Auto Assign Tables
+            </label>
+            <br/>
+            <label>Open Days:</label> Monday - Sunay <label>
+            <br/>
+            Time: </label> 11:00 A.M - 11 P.M
+        </div>
+    </div>
+    </div>
+</div>
+<script src="bootstrap/js/operation.js"></script>
+</body>
+
+</html>

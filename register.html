@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Book My Table</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/main.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
+</head>
+
+<body>
+<div class="div-header">
+    <a href="bookmytable.html" style="color: #ffffff; text-decoration: none;"><span><i class="glyphicon glyphicon-home"></i>  <strong>Home</strong></span></a>
+</div>
+
+<div class="panel panel-primary container-margin">
+
+    <div class="panel-heading"><b>The Cheesecake Factory</b>
+        <br/> American, Desserts
+    </div>
+    <div class="panel-body">
+        <div class="register-left-div">
+            <div class="input-group input-margin">
+                <label for="name">Name</label>
+                <input type="text" id="name" class="form-control" placeholder="First Name   Last Name" required>
+            </div>
+            <div class="input-group input-margin">
+                <label for="contact">Phone Number</label>
+                <input type="text" id="contact" class="form-control" placeholder="(xxx)-xxx-xxxx" required>
+            </div>
+            <div class="input-group input-margin">
+                <label for="alternatecontact">Alternate Number</label>
+                <input type="text" id="alternatecontact" class="form-control" placeholder="(xxx)-xxx-xxxx">
+            </div>
+
+            <div class="input-group input-margin">
+                <label for="bookingdate">Date & Time</label>
+                <input type="date" id="bookingdate" class="form-control" required>
+                <input type="time" id="bookingtime" class="form-control" required>
+            </div>
+
+
+        </div>
+
+        <div class="register-right-div">
+            <div class="input-group input-margin">
+                <label for="partysize">Party Size</label>
+                <input type="number" id="partysize" class="form-control" required>
+            </div>
+
+            <div class="input-group input-margin">
+                <label for="adultcount">No. of Adults</label>
+                <input type="number" id="adultcount" class="form-control">
+            </div>
+            <div class="input-group input-margin">
+                <label for="kidcount">No. of Kids</label>
+                <input type="number" id="kidcount" class="form-control">
+            </div>
+            <div class="input-group input-margin">
+                <label for="seniorcount">No. of Senior Citizens</label>
+                <input type="number" id="seniorcount" class="form-control">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="panel-footer">
+        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modalConfirmation"><i class="glyphicon glyphicon-ok"
+                                                         style="padding-right: 10px;"></i>Confirm Reservation
+        </button>
+        <a href="browse.html" style="text-decoration:none;"> <button type="button" class="btn btn-danger" onclick="return confirm('Are you sure you want to cancel the current operation?');"><i class="glyphicon glyphicon-remove"
+                                                        style="padding-right: 10px;"></i>Cancel
+        </button></a>
+    </div>
+</div>
+
+<div class="modal fade" id="modalConfirmation" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="ShowConfirmation('showMessage');"><span aria-hidden="true">&times;</span> </button>
+                <h4 class="modal-title" id="myModalLabel">Confirmation</h4>
+            </div>
+            <div class="modal-body">
+                <div id="divCMessage" style="display: inline;"><strong>Sorry! </strong><br/><br/>
+                We are not able to take reservations at the moment as all our tables are already booked.
+                Would you like to be on the wait list in case of any cancellations?
+                If yes, please go ahead and confirm the booking and we will give you a <strong>Confirmation Code</strong>.
+                Using this code, you can track the status, edit or cancel your reservation at any time.
+                <br/><br/>
+                <strong>Thank You!</strong></div>
+                <div id="divCCode" style="display: none; visibility: hidden;">
+                    <label class="alert alert-success">Confirmation Code: TCF0729</label>
+                    <br/>Please save the above confirmation code to edit/ cancel or check the status of your reservation.
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal" onclick="ShowConfirmation('showMessage');">Close</button>
+                <button id="btnConfirm" type="button" class="btn btn-primary" onclick="ShowConfirmation('showCode');">Confirm Reservation</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="bootstrap/js/operation.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+
+</html>

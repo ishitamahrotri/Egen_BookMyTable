@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Book My Table</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/main.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
+</head>
+
+<body onload="resize();">
+<div class="div-header">
+    <a href="bookmytable.html" style="color: #ffffff; text-decoration: none;"><span><i class="glyphicon glyphicon-home"></i>  <strong>Home</strong></span></a>
+</div>
+  <div class="panel panel-primary" style="width: 50%; margin: auto; margin-top: 5%;">
+
+    <div class="panel-heading">
+      <b>The Cheesecake Factory</b>
+      <br/> American, Desserts
+      <br/>
+      <span><strong>Confirmation Code:</strong> TCF001
+      <br />
+      <strong>Status: <u>Awaiting Confirmation</u></strong>
+      </span>
+    </div>
+    <div class="panel-body">
+
+        <div class="input-group input-margin">
+          <label for="name">Name:</label> Ishita Mahrotri
+
+        </div>
+        <div class="input-group input-margin">
+          <label for="contact">Phone Number:</label> 669-350-6155
+
+        </div>
+        <div class="input-group input-margin">
+          <label for="alternatecontact">Alternate Number:</label> -
+
+        </div>
+
+        <div class="input-group input-margin">
+          <label for="bookingdate">Date & Time:</label> 27-Jul-2015 8:00 PM
+        </div>
+
+        <div class="input-group input-margin">
+          <label for="partysize">Party Size:</label> 6 <small>(4 Adults, 1 Kid, 1 Senior Citizen)</small>
+
+        </div>
+        <div class="input-group">
+            <label class="text-justify">Your reservation was in waiting list. We now have a table available. To confirm the reservation please select Confirm button below. <br/><br/>Thank You! </label>
+
+        </div>
+    </div>
+
+    <div class="panel-footer">
+      <button type="button" class="btn btn-info"><i class="glyphicon glyphicon-pencil" style="padding-right: 10px;"></i>Edit</button>
+      <button type="button" class="btn btn-success"><i class="glyphicon glyphicon-ok" style="padding-right: 10px;"></i>Confirm Reservation</button>
+      <button type="button" class="btn btn-danger"><i class="glyphicon glyphicon-remove" style="padding-right: 10px;"></i>Cancel Reservation</button>
+    </div>
+  </div>
+
+<script type="text/javascript">
+
+    function resize() {
+        window.resizeTo(screen.width, screen.height)
+    }
+
+</script>
+</body>
+</html>

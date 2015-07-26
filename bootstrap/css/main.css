@@ -1,0 +1,318 @@
+/*--------Element CSS----------*/
+
+a
+{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover
+{
+    text-decoration: none;
+}
+
+html
+{
+    font-size: 10px;
+}
+
+body {
+    background-image: url('images/redwhiteplates.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100%;
+    margin:0;
+    padding:0;
+}
+
+/*--------Element CSS----------*/
+
+.panel-opaque
+{
+    opacity: 0.9;
+}
+
+.confirmstatus
+{
+    float: right;
+    width: 30%;
+    margin-right: 3%;
+    margin-top: 1%;
+    text-align:center;
+}
+
+img.menu
+{
+    height: 100%;
+    width: 75px;
+}
+
+.menulist
+{
+    height: 100px;
+}
+
+.middlediv
+{
+    width: 70%;
+    height: 100%;
+}
+
+.rightdiv
+{
+    width: 10%;
+    height: 100%;
+    float: right;
+    text-align: right;
+}
+
+.registrationform
+{
+    padding: 5%;
+    margin: auto;
+}
+
+
+.container-center1
+{
+    width: 60%;
+    margin: auto;
+    border: solid black 1px;
+    text-align: center;
+}
+
+.left-side
+{
+    width: 50%;
+    margin: auto;
+    float: left;
+    padding-left: 200px;
+    margin-top: 15%;
+    font-family: Verdana;
+    color: #2e6da4;
+}
+
+.right-side
+{
+    width: 50%;
+    margin: auto;
+    float: right;
+    padding-right: 200px;
+    margin-top: 15%;
+    font-family: Verdana;
+    color: #2e6da4;
+}
+
+.homepage-header
+{
+    width: 40%;
+    margin: auto;
+    font-size: 2em;
+}
+
+.left-float
+{
+    float: left;
+}
+
+.right-float
+{
+    float: right;
+}
+
+.container-div
+{
+    width: 40%;
+    margin: auto;
+    margin-top: 5%;
+}
+
+.navigation
+{
+    width: 100%;
+    margin-top: 10px;
+    font-size: 1.5em;
+    color: #0288D1;
+}
+
+.div-search
+{
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+.handpointer
+{
+    cursor: pointer;
+}
+
+.leftdiv
+{
+    float: left;
+    height: 100%;
+    margin-right: 1%;
+}
+
+.ListDiv
+{
+    width: 90%;
+    margin: auto;
+    margin-top: 1%;
+    height: 475px;
+    overflow: auto;
+    font-size: 1.3em;
+    opacity: 0.9;
+}
+
+.register-left-div {
+    width: 40%;
+    float: left;
+
+}
+
+.registter-right-div {
+    width: 40%;
+    float: right;
+}
+
+.input-margin
+{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.show
+{
+    display: block;
+    visibility: visible;
+}
+
+.hideBlock
+{
+    display: block;
+    visibility: hidden;
+}
+
+.hideInline
+{
+    display: none;
+    visibility: hidden;
+}
+
+.inactive-tab
+{
+    background-color: transparent;
+    color: black;
+}
+
+/*  Homepage  */
+
+.divtrans {
+    opacity: 0.75;
+}
+
+.div-black {
+    background-color: black;
+    color: #ffffff;
+    position: relative;
+}
+
+.div-red {
+    background-color: red;
+    color: #000000;
+}
+
+.div-brown {
+    background-color: sandybrown;
+
+}
+
+.div-content-right {
+    font-size: 2em;
+    padding-right: 100px;
+    padding-left: 100px;
+    font-weight: bold;
+    position:absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.div-content-bottom
+{
+    font-size: 2em;
+    padding-top: 10px;
+    padding-right: 100px;
+    padding-left: 100px;
+    font-weight: bold;
+    float: right;
+
+}
+
+.codecontainer
+{
+    float: right;
+    width: 40%;
+    margin-top: 15px;
+    margin-right: 50px;
+}
+.login-container
+{
+    float: left;
+    width: 40%;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+/* End Homepage */
+
+.div-header
+{
+    top: 0;
+    left: 0;
+    height: 50px;
+    background-color: black;
+
+    opacity: 0.6;
+    padding: 15px;
+    color: #ffffff;
+}
+
+.white-link
+{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav-black
+{
+    color: #000000;
+    font-weight: bold;
+    background-color: black;
+    opacity: 0.8;
+    margin-top: 0;
+}
+
+
+
+.container-margin {
+    margin: 3%;
+}
+
+.input-margin {
+    margin-top: 10px;
+    margin-bottom: 15px;
+
+}
+
+.register-left-div {
+    width: 40%;
+    float: left;
+
+}
+
+.register-right-div {
+    width: 40%;
+    float: right;
+
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Book My Table</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/main.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <style type="text/css">
+        body {
+            background-image: url('images/search_bg.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+        }
+    </style>
+
+</head>
+<body onload="PerformDefaultActions();">
+
+<div id="divBlack" class="divtrans div-black text-right">
+    <div class="div-content-right">
+        <a href="browse.html" style="color: #ffffff; text-decoration: none;"><i class="glyphicon glyphicon-cutlery"></i>&nbsp;&nbsp;<span>Book a Table</span></a>
+    </div>
+</div>
+<div id="divRed" class="divtrans div-red">
+    <div class="panel panel-danger codecontainer">
+        <div class="panel-heading text-center">
+            <strong>Already Have a Reservation?</strong>
+        </div>
+        <div class="panel-body text-center">
+            <div class="input-group" style="margin: auto;">
+                <label for="confirmationcode">Confirmation Code</label>
+                <input type="text" id="confirmationcode" class="form-control"
+                       placeholder="Enter your confirmation code here" required>
+            </div>
+            <div id="divStatus" style="display: none; visibility: hidden;">
+                <span class="alert-success"><h3>Confirmed!</h3></span>
+            </div>
+        </div>
+        <div class="panel-footer">
+            <button class="btn btn-success"
+                    onclick="document.getElementById('divStatus').visibility = 'visible'; document.getElementById('divStatus').display = 'inline';">
+                <strong><i class="glyphicon glyphicon-bookmark"></i> Check Status</strong>
+            </button>
+            <a href="vieweditreservation.html">
+                <button class="btn btn-primary right-float"><strong><i class="glyphicon glyphicon-pencil"></i> View/Edit
+                    Reservation</strong></button>
+            </a>
+        </div>
+    </div>
+</div>
+<div id="divBrown" class="divtrans div-brown text-left">
+    <div id="divLogin" class="login-container" style="display: block; visibility: hidden;">
+        <div class="panel panel-warning">
+            <div class="panel-body">
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-user"></i></span>
+                    <input type="text" id="inEmail" class="form-control" placeholder="Enter your email-id" required>
+                </div>
+                <br/>
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon2"><i class="glyphicon glyphicon-lock"></i></span>
+                    <input type="password" class="form-control" placeholder="Enter your password" required>
+                </div>
+            </div>
+            <div class="panel-footer">
+                <a href="profilesetting.html" onclick="StoreLoginInfo();"><button class="btn btn-success">
+                    <i class="glyphicon glyphicon-log-in"></i> Login
+                </button></a>
+
+                <button class="btn btn-danger" onclick="document.getElementById('divLogin').style.visibility = 'hidden';">
+                    <i class="glyphicon glyphicon-remove"></i> Close
+                </button>
+                <a href="#" style="float: right;">Forgot Password?</a>
+            </div>
+        </div>
+    </div>
+    <div class="div-content-bottom">
+        <a id="aLogin" href="#" onclick="document.getElementById('divLogin').style.visibility = 'visible';" style="color: #000000;"><span> <i class="glyphicon glyphicon-log-in"></i>&nbsp;&nbsp;Login</span></a>
+        <small><label id="loginDetail" style="display: none; visibility: hidden; color: #000000;"></label></small>
+    </div>
+</div>
+<script src="bootstrap/js/operation.js"></script>
+</body>
+</html>
